@@ -1,0 +1,9 @@
+.img-box-inner {
+  padding: 10px 30px;
+  box-sizing: border-box;
+}
+
+.img-box-inner img {
+  width: 100%;
+  height: auto;
+}
