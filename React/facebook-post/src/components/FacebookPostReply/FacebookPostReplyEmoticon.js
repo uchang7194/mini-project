@@ -19,7 +19,7 @@ const FacebookPostReplyEmoticon = ({setWhatLike, toggleEmoticon}) => {
           </li>
           <li>
             <div onClick={() => { 
-                setWhatLike('love it'); 
+                setWhatLike('love_it'); 
                 toggleEmoticon();
               }}>
               <span>최고에요</span>

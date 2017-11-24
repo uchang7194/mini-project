@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import FacebookPostReplyActiveBtns from './FacebookPostReplyActiveBtns';
+import FacebookPostReplyShowLikes from './FacebookPostReplyShowLikes';
 
 import './FacebookPostReply.css';
 
@@ -10,15 +11,22 @@ export default class FacebookPostReply extends Component {
     super(props);
 
     this.state = {
-      what_like: ''
+      what_likes: {
+        like: 0,
+        love_it: 0
+      }
     }
 
     this._handleWhatLike = this._handleWhatLike.bind(this);
   }
 
   _handleWhatLike(like) {
+    let copy_what_likes = Object.assign({}, this.state.what_likes);
+
+    copy_what_likes[like] += 1;
+    
     this.setState({
-      what_like: like
+      what_likes: copy_what_likes
     }); 
   }
   render() {
@@ -27,9 +35,12 @@ export default class FacebookPostReply extends Component {
         <FacebookPostReplyActiveBtns 
           setWhatLike={this._handleWhatLike}
         />
-        {/* 좋아요 */}
-        {/* 공유 */}
-        {/* 댓글 */}
+        <div>
+          {/* 좋아요 */}
+          <FacebookPostReplyShowLikes what_likes={this.state.what_likes}/>
+          {/* 공유 */}
+          {/* 댓글 */}
+        </div>
       </div>
     )
   }

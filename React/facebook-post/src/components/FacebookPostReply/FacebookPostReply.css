@@ -1,3 +1,6 @@
 .post-reply-area {
   background: #ddd;
 }
+.post-reply-area > div {
+  padding: 0 10px;
+}
