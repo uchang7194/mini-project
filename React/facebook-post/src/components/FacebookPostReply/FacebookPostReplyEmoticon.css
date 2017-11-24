@@ -1,0 +1,56 @@
+.emoticon {
+  position: absolute;
+  bottom: 90%;
+  left: 0;
+  width: 300px;
+  padding: 10px 15px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 2px 2px #ccc;
+  background: #fff;
+}
+
+.emoticon ul {
+  margin: 0;
+  padding-left: 0;
+}
+.emoticon ul::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.emoticon li {
+  position: relative;
+  float: left;
+  list-style: none;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+.emoticon li:hover span {
+  display: block;
+}
+.emoticon li > div{
+  position: absolute;
+  width: 40px;
+  transition: transform 0.25s;
+  text-align: center;
+}
+.emoticon li > div:hover{
+  transform: scale(1.15);
+}
+.emoticon li span {
+  position: absolute;
+  display: none;
+  bottom: 100%;
+  left: 50%;
+  width: 200%;
+  padding: 5px 7px;
+  border-radius: 10px;
+  background: #4e4e4e;
+  transform: translateX(-50%);
+  color: #fff;
+}
+.emoticon li i {
+  font-size: 5rem;
+  cursor: pointer;
+}

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import FacebookPostPicture from './FacebookPostPicture';
 import FacebookPostInfo from './FacebookPostInfo';
+import FacebookPostReply from './FacebookPostReply/FacebookPostReply';
 
 import './FacebookPost.css';
 
@@ -31,7 +32,7 @@ export default class FacebookPost extends Component {
           </div>
           <div className="post-info-box">
             <FacebookPostInfo user_info={this.state.user_info}/>
-            {/* reply */}
+            <FacebookPostReply />
           </div>
         </div>
       </div>

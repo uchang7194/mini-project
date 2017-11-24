@@ -1,0 +1,24 @@
+.post-reply-activebtns {
+}
+.post-reply-activebtns ul {
+  padding-left: 0;
+  margin: 0;
+}
+.post-reply-activebtns ul::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.post-reply-activebtns li {
+  position: relative;
+  float: left;
+  list-style: none;
+  padding: 15px 10px;
+}
+.post-reply-activebtns li a{
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #888;
+}
