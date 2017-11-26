@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 
-import FacebookPostReplyActiveBtns from './FacebookPostReplyActiveBtns';
-import FacebookPostReplyShowLikes from './FacebookPostReplyShowLikes';
+import FacebookPostBottomActiveBtns from './FacebookPostBottomActiveBtns';
+import FacebookPostBottomShowLikes from './FacebookPostBottomShowLikes';
+import FacebookPostBottomReply from './FacebookPostBottomReply';
 
-import './FacebookPostReply.css';
+import './FacebookPostBottom.css';
 
-export default class FacebookPostReply extends Component {
+export default class FacebookPostBottom extends Component {
 
   constructor(props) {
     super(props);
@@ -32,14 +33,14 @@ export default class FacebookPostReply extends Component {
   render() {
     return (
       <div className="post-reply-area">
-        <FacebookPostReplyActiveBtns 
+        <FacebookPostBottomActiveBtns 
           setWhatLike={this._handleWhatLike}
         />
         <div>
           {/* 좋아요 */}
-          <FacebookPostReplyShowLikes what_likes={this.state.what_likes}/>
-          {/* 공유 */}
+          <FacebookPostBottomShowLikes what_likes={this.state.what_likes}/>
           {/* 댓글 */}
+          <FacebookPostBottomReply />
         </div>
       </div>
     )

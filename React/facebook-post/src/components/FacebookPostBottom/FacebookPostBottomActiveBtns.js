@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-import FacebookPostReplyEmoticon from './FacebookPostReplyEmoticon';
+import FacebookPostBottomEmoticon from './FacebookPostBottomEmoticon';
 
-import './FacebookPostReplyActiveBtns.css';
+import './FacebookPostBottomActiveBtns.css';
 
-export default class FacebookPostReplyActiveBtns extends Component {
+export default class FacebookPostBottomActiveBtns extends Component {
 
   constructor(props) {
     super(props);
@@ -29,7 +29,7 @@ export default class FacebookPostReplyActiveBtns extends Component {
 
   _setEmoticon = () => {
     return (
-      <FacebookPostReplyEmoticon 
+      <FacebookPostBottomEmoticon 
         setWhatLike={this.props.setWhatLike}
         toggleEmoticon={this._handleToggleEmoticon}
       />

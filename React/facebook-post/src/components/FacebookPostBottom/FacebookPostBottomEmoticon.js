@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './FacebookPostReplyEmoticon.css';
+import './FacebookPostBottomEmoticon.css';
 
-const FacebookPostReplyEmoticon = ({setWhatLike, toggleEmoticon}) => {
+const FacebookPostBottomEmoticon = ({setWhatLike, toggleEmoticon}) => {
 
     return (
 
@@ -31,4 +31,4 @@ const FacebookPostReplyEmoticon = ({setWhatLike, toggleEmoticon}) => {
     );
 }
 
-export default FacebookPostReplyEmoticon;
+export default FacebookPostBottomEmoticon;

@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './FacebookPostReplyShowLikes.css';
+import './FacebookPostBottomShowLikes.css';
 
-const FacebookPostReplyShowLikes = ({what_likes}) => {
+const FacebookPostBottomShowLikes = ({what_likes}) => {
 
     function renderWhatLikes(_what_likes) {
 
@@ -31,4 +31,4 @@ const FacebookPostReplyShowLikes = ({what_likes}) => {
     );
 }
 
-export default FacebookPostReplyShowLikes;
+export default FacebookPostBottomShowLikes;
