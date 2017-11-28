@@ -1,0 +1,15 @@
+.todoeditor fieldset{
+  margin: 0;
+  padding: 0;
+  border: 0 none;
+}
+.todoeditor legend{
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+.todoeditor input[type="text"] {
+  padding: 7px 0 7px 10px;
+  font-size: 1.2rem;
+  border: 0 none;
+  border-bottom: 1px solid #aaa;
+}

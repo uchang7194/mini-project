@@ -1,0 +1,11 @@
+.todolist {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.todolist ul {
+  margin: 20px 0 0 0;
+  padding-left: 0;
+}
+.todolist li {
+  margin-bottom: 15px;
+}
