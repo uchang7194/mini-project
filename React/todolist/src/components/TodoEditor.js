@@ -37,7 +37,7 @@ export default class TodoEditor extends Component {
       <div className="todoeditor">
         <form>
           <fieldset>
-            <legend>Todo Editor</legend>
+            <legend className="a11y-hidden">Todo Editor</legend>
             <label>
               <input 
                 type="text" 

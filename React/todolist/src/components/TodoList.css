@@ -4,7 +4,7 @@
 }
 .todolist ul {
   margin: 20px 0 0 0;
-  padding-left: 0;
+  padding: 0 10px;
 }
 .todolist li {
   margin-bottom: 15px;

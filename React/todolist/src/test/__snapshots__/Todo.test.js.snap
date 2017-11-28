@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`toJSON으로 파일이 어떻게 스냅샷이 되는가? 1`] = `
+<li
+  className="todo"
+>
+  <div
+    className="show-todo"
+  >
+    <p />
+  </div>
+  <div
+    className="utils"
+  >
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      삭제
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      수정
+    </button>
+  </div>
+</li>
+`;

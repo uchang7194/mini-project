@@ -12,6 +12,7 @@ export default class Todo extends Component {
     this.state = {
       value: ''
     }
+    this._handleOnChange = this._handleOnChange.bind(this);
   }
 
   _handleOnClickDelete = () => {
@@ -74,8 +75,8 @@ export default class Todo extends Component {
           { this._renderTodoText() }
         </div>
         <div className="utils">
-          <button type="button" onClick={() => { this._handleOnClickDelete() }}>삭제</button>
-          <button type="button" onClick={() => { this._handleOnClickModified() }}>수정</button>
+          <button className="delete-btn" type="button" onClick={() => { this._handleOnClickDelete() }}>삭제</button>
+          <button className="modify-btn"type="button" onClick={() => { this._handleOnClickModified() }}>수정</button>
         </div>
       </li>
     );
@@ -83,5 +84,10 @@ export default class Todo extends Component {
 }
 
 Todo.PropTypes = {
-  todo: PropTypes.string.isRequired
+  todo: PropTypes.string.isRequired,
+  idx: PropTypes.number.isRequired,
+  modified_flag: PropTypes.bool.isRequired,
+  removeTodo: PropTypes.func.isRequired,
+  activeModifiedTodo: PropTypes.func.isRequired,
+  modifiedTodo: PropTypes.func.isRequired
 }
